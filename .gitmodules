@@ -15,3 +15,7 @@
 	path = dotbot-yum
 	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
 	ignore = dirty
+[submodule "tmux/tpm"]
+	path = tmux/tpm
+	url = https://github.com/tmux-plugins/tpm
+	ignore = dirty
