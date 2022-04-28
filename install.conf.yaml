@@ -5,25 +5,35 @@
 - clean: ['~']
 
 - link:
+    # git configuration
     ~/.gitconfig: gitconfig
+    # zsh / oh-my-zsh
     ~/.zprofile: zprofile
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
-    ~/.tmux.conf: tmux.conf
-    ~/bin:
-        path: bin/
-        create: true
-    ~/.Xresources: Xresources
+    ~/.zlogin: zlogin
+    ~/.zlogout: zlogout
     ~/.config/zsh: 
         path: config/zsh/
         create: true
+    ~/.oh-my-zsh: oh-my-zsh/
+    # tmux
+    ~/.tmux.conf: tmux.conf
+    ~/.tmux: tmux/
+    # local bin
+    ~/bin:
+        path: bin/
+        create: true
+    # kitty terminal
     ~/.config/kitty: 
         path: config/kitty/
         create: true
     ~/.terminfo: 
         path: terminfo/
         create: true
-    ~/.oh-my-zsh: oh-my-zsh/
+    # miscellanious
+    ~/.Xresources: Xresources
+
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

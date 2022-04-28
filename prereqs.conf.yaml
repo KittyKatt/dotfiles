@@ -4,4 +4,4 @@
         stdout: False
         stderr: True
 
-- yum: [zsh, util-linux-user, exa, bat]
+- yum: [zsh, util-linux-user, exa, bat, entr, fd-find]
