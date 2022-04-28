@@ -1,1 +1,7 @@
-yum: [exa, zsh, bat]
+- defaults:
+    yum:
+        options: "-y"
+        stdout: False
+        stderr: True
+
+- yum: [zsh, util-linux-user, exa, bat]
