@@ -1,0 +1,131 @@
+! terminal colors ------------------------------------------------------------
+!#include "/home/katie/.colours/arthur"
+!#include "/home/katie/.colours/ashe"
+!#include "/home/katie/.colours/babypuncher"
+!#include "/home/katie/.colours/bright"
+!#include "/home/katie/.colours/byte"
+!#include "/home/katie/.colours/dark"
+!#include "/home/katie/.colours/econ"
+!#include "/home/katie/.colours/gnumatic"
+!#include "/home/katie/.colours/jhvid"
+!#include "/home/katie/.colours/k3ttc4r"
+!#include "/home/katie/.colours/lich"
+!#include "/home/katie/.colours/low"
+!#include "/home/katie/.colours/mason.larobina"
+!#include "/home/katie/.colours/new1"
+!#include "/home/katie/.colours/new2"
+!#include "/home/katie/.colours/nu"
+!#include "/home/katie/.colours/old"
+!#include "/home/katie/.colours/rab"
+!#include "/home/katie/.colours/reasons"
+!#include "/home/katie/.colours/sen"
+!#include "/home/katie/.colours/sicp"
+!#include "/home/katie/.colours/soft"
+!#include "/home/katie/.colours/KittyKatt"
+#include "/home/katie/.colours/new_katt"
+!#include "/home/katie/.colours/Taters"
+!#include "/home/katie/.colours/thayer"
+!#include "/home/katie/.colours/tvale"
+!#include "/home/katie/.colours/VCoolio"
+!#include "/home/katie/.colours/washed"
+!#include "/home/katie/.colours/zenburn"
+!#include "/home/katie/.colours/hu6"
+!#include "/home/katie/.colours/shinryuu"
+!#include "/home/katie/.colours/hu6-new"
+!#include "/home/katie/.colours/4bit"
+!#include /home/katie/.colours/lychnobite
+
+! rxvt-unicode main options ---------------------------------------------------
+URxvt.perl-ext-common:		default,matcher,resize-font
+! URxvt.urlLauncher:		/usr/bin/chromium-dev
+URxvt.url-launcher:		/usr/bin/firefox
+! URxvt.url-launcher:		/home/katie/bin/ff-open
+URxvt.matcher.button:		1
+URxvt.matcher.rend.0:		fg16 RS_Uline
+
+URxvt.urgentOnBell:		True
+
+!URxvt*meta8:			false
+!URxvt.keysym.C-Left:		\033[1;5D
+!URxvt.keysym.C-Right:		\033[1;5C
+!URxvt*keysym.Home:		\033[1~
+!URxvt*keysym.End:		\033[4~
+
+URxvt*keysym.C-j: command:\033]710;-*-fixed-medium-r-normal--10-*-*-*-*-*-*-*\007
+
+URxvt.geometry:			90x30
+URxvt.externalBorder:		0
+URxvt.borderless: true
+URxvt.internalBorder: 6
+URxvt.buffered:			true
+URxvt.background:		black
+URxvt.foreground:		white
+URxvt.cursorColor:		white
+urxvt*cursorBlink:		true
+URxvt.underlineColor:		red
+
+urxvt*scrollTtyKeypress:        true
+!jump to bottom (prompt) when tty gets new lines
+urxvt*scrollWithBuffer:         false
+!jump to bottom (prompt) on tty output
+urxvt*scrollTtyOutput:          false
+!save n lines of scrollback
+urxvt*saveLines:                10000
+!toggle scrollbar
+*scrollBar:             false
+!scrollbar styles: rxvt, plain, next or xterm
+urxvt*scrollstyle:              plain
+!scrollbar alignment
+urxvt*scrollBar_right:          true
+urxvt*title:                    terminal
+!------------
+!True Transparency
+!------------
+!set to 32-bit for real transparency (compositing required (see xcompmgr)
+!urxvt*depth:                   32
+!transparent=0000 opaque=ffff
+!TRANS
+!urxvt*background:              rgba:1111/1111/1111/dddd
+!urxvt*background:              rgba:1111/1111/1111/0000
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/dddd
+
+!------------------
+!False tranparency
+!------------------
+!URxvt.transparent:             true
+!URxvt.shading:                 50
+
+! Enable Shitf-PageUp/Down in screen
+Urxvt.secondaryScroll:          true
+
+
+
+! rxvt-unicode font -----------------------------------------------------------
+URxvt*font: xft:Cozette:style=Medium
+URxvt*boldFont: xft:Cozette:style=Medium
+
+!URxvt*font: xft:mononoki:style=Regular, \
+            xft:mononoki Nerd Font:style=Regular, \
+            xft:Iosevka Term,Iosevka Nerd Font Mono:style=Thin,Regular
+!URxvt*boldFont: xft:mononoki:style=Bold, \
+            xft:mononoki Nerd Font:style=Bold, \
+            xft:Iosevka Term,Iosevka Nerd Font Mono:style=Bold,Regular
+!URxvt*font: xft:artwiz drift:pixelsize=10:antialias=false, \
+!URxvt*font: xft:drift.se:style=Regular:pixelsize=10:antialias=false, \
+            xft:Nimbus Mono PS:style=Regular:pixelsize=10:antialias=false, \
+            xft:Unifont:pixelsize=10:antialias=false, \
+            ttf:Inconsolata for Powerline:pixelsize=10:antialias=false
+!URxvt*boldFont: xft:drift.se:style=Regular:pixelsize=10:antialias=false, \
+            xft:Unifont:pixelsize=10:antialias=false
+!URxvt*font: xft:artwiz drift:pixelsize=10:antialias=false
+!URxvt*font: -artwiz-drift.se-medium-*-normal-*-*-*-*-*-*-*-*-*
+!URxvt*boldFont: -artwiz-drift.se-medium-*-normal-*-*-*-*-*-*-*-*-*
+!URxvt.font: -*-drift-medium-r-normal-*-10-*-*-*-*-*-*-1
+!URxvt.boldFont: -*-drift-medium-r-normal-*-10-*-*-*-*-*-*-1
+!URxvt.font:			-artwiz-lime.se-medium-r-normal--10-110-75-75-m-50-iso8859-1
+!URxvt.boldFont:		-artwiz\-cure-medium-*-normal-*-11-*-*-*-*-*-*-*
+!URxvt.font: xft:artwiz drift:pixelsize=10:antialias=false,xft:Nimbus Mono PS:pixelsize=10:antialias=false
+!URxvt.boldFont: xft:artwiz drift:pixelsize=10:antialias=false,xft:Nimbus Mono PS:pixelsize=10:antialias=false
+!URxvt.font: 9x15
+!URxvt*font: xft:Terminus:pixelsize=11,xft:Inconsolata\ for\ Powerline:pixelsize=9

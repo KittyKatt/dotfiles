@@ -1,0 +1,18 @@
+#!/bin/bash
+
+tmux new-session -n dev \; \
+rename-window local-zsh \; \
+new-window -n swarm-mgr ssh docker@10.1.10.61 \; \
+split-window -h -p 50 ssh docker@10.1.10.62 \; \
+split-window -d -v -p 50 ssh docker@10.1.10.63 \; \
+new-window -n swarm-nodes ssh docker@10.1.10.64 \; \
+split-window -h -p 50 ssh docker@10.1.10.65 \; \
+split-window -v -p 50 ssh docker@10.1.10.66 \; \
+select-pane -t 1 \; \
+split-pane -v -p 50 ssh docker@10.1.10.67 \; \
+new-window -n kelemvor ssh kittykatt@10.1.10.23 \; \
+new-window -n sigil ssh pi@10.1.10.150 \; \
+new-window -n toril ssh root@10.1.10.11 \; \
+new-window -n crystal ssh root@10.1.10.45 \; \
+new-window -n ipa-dc1 ssh root@10.1.10.58 \; \
+new-window -n sylenia ssh katie@192.168.12.5
