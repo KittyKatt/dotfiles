@@ -1,3 +1,7 @@
+- defaults:
+    link:
+        relink: true
+
 - clean: ['~']
 
 - link:
@@ -9,5 +13,17 @@
         path: bin/
         create: true
     ~/.Xresources: Xresources
+    ~/.config/zsh: 
+        path: config/zsh/
+        create: true
+    ~/.config/kitty: 
+        path: config/kitty/
+        create: true
+    ~/.terminfo: 
+        path: terminfo/
+        create: true
+    ~/.oh-my-zsh: oh-my-zsh/
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [chsh -s $(which zsh), Making ZSH the default shell]
