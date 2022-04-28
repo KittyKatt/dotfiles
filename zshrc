@@ -72,7 +72,7 @@ ZSH_CUSTOM=${HOME}/.config/zsh/oh-my-zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages command-not-found jsontools k sudo systemadmin tmux zsh-autosuggestions)
+plugins=(alias-finder colored-man-pages command-not-found dnf docker docker-compose extract fd genpass git git-flow gitignore helm jsontools k kubectl kubectx sudo systemadmin terraform tmux zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
