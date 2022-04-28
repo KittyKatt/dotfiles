@@ -9,6 +9,7 @@
     ~/.zprofile: zprofile
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
+    ~/.tmux.conf: tmux.conf
     ~/bin:
         path: bin/
         create: true
@@ -26,4 +27,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [chsh -s $(which zsh), Making ZSH the default shell]
+    - [source $HOME/.zshrc, source new zshrc]
