@@ -14,3 +14,4 @@
 [submodule "dotbot-yum"]
 	path = dotbot-yum
 	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
+	ignore = dirty
