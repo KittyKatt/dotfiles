@@ -2,3 +2,15 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "config/zsh/oh-my-zsh/plugins/k"]
+	path = config/zsh/oh-my-zsh/plugins/k
+	url = https://github.com/supercrabtree/k
+[submodule "config/zsh/oh-my-zsh/plugins/zsh-autosuggestions"]
+	path = config/zsh/oh-my-zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "dotbot-yum"]
+	path = dotbot-yum
+	url = https://gitlab.com/flyingchipmunk/dotbot-yum.git
